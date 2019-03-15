@@ -1,0 +1,32 @@
+  @DataProvider(name = "loginCredits")
+  public Object[][] loginDetails(){
+	  
+	  Object [][] loginData = null;
+	  String uname = "";
+	  String pass = "";
+	 
+	  try{
+		  ec.getSheet(0);
+		  int the_rows = ec.getAllRowCount();
+		  
+		  loginData  = new Object[2][2]; // set specific number of rows
+		  
+	
+		  for(int i=1; i<the_rows; i++){  // set i to 1 to start reading first data or set to other values, 
+			   uname = ec.readData(i, 0);
+			   pass = ec.readData(i, 2);
+			  
+			  loginData[i-1][0] = uname; // subtract i by 1 to accomodate array at index [0][0]. If i set to 3 in the for loop, then it should be loginData[i-3][0]
+			  loginData[i-1][1] = pass;  // subtract i by 1 to accomodate array at index [0][1]. If i set to 3 in the for loop, then it should be loginData[i-3][0]
+
+		  }
+		
+	  }
+	  catch(Exception e){
+		  System.out.println(e.getMessage());
+	  }
+		  
+	return loginData;
+	  
+	  
+  }

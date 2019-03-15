@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="87703" started-at="2016-11-24T11:19:54Z" finished-at="2016-11-24T11:21:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="87703" started-at="2016-11-24T11:19:54Z" finished-at="2016-11-24T11:21:21Z">
+      <class name="test_case.TestCases">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_case.TestCases@11fc564b]" name="setUp" is-config="true" duration-ms="34545" started-at="2016-11-24T19:19:54Z" finished-at="2016-11-24T19:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="forgotPassword()[pri:4, instance:test_case.TestCases@11fc564b]" name="forgotPassword" duration-ms="49468" started-at="2016-11-24T19:20:28Z" finished-at="2016-11-24T19:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPassword -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:test_case.TestCases@11fc564b]" name="closeBrowser" is-config="true" duration-ms="3659" started-at="2016-11-24T19:21:18Z" finished-at="2016-11-24T19:21:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test_case.TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
